@@ -6,8 +6,8 @@ const { config } = require('dotenv');
 const app = express();
 
 const pool = new Pool({
-    connectionString: process.env.POSTGRES_URL + "?sslmode=require",
-  })
+    connectionString: process.env.DATABASE_URL,
+});
 
 app.use(cors());
 
