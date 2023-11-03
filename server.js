@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const { Pool } = require('pg');
-const { config } = require('dotenv');
 const { Client } = require('pg');
 
 const app = express();
+
+app.use(cors());
 
 const connectionData = {
     user: 'noesax',
@@ -18,7 +18,6 @@ const client = new Client(connectionData)
 
 client.connect();
 
-app.use(cors());
 
 app.use(express.json());
 
