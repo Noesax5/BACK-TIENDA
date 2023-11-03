@@ -5,9 +5,13 @@ const { config } = require('dotenv');
 
 const app = express();
 
-const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
-});
+const connectionData = {
+    user: 'noesax',
+    host: 'dpg-cktec1eb0mos73c2bfjg-a',
+    database: 'tienda_8n1y',
+    password: '2dvTtfwtx3xX2pgtkNN66QQfNKA17phq',
+    port: 5432,
+}
 
 app.use(cors());
 
