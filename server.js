@@ -13,6 +13,10 @@ const connectionData = {
     port: 5432,
 }
 
+const client = new Client(connectionData)
+
+client.connect();
+
 app.use(cors());
 
 app.use(express.json());
