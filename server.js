@@ -11,7 +11,7 @@ const connectionData = {
     host: 'dpg-cktec1eb0mos73c2bfjg-a',
     database: 'tienda_8n1y',
     password: '2dvTtfwtx3xX2pgtkNN66QQfNKA17phq',
-    port: 5432,
+    port: 5432
 }
 
 const client = new Client(connectionData)
